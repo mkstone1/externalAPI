@@ -48,14 +48,14 @@ public class RemoteApiTester implements CommandLineRunner {
         return age;
     }
 
-   /* Mono<Nation> getNationFromName(String name) {
+   Mono<Nation> getNationFromName(String name) {
         WebClient client = WebClient.create();
         Mono<Nation> nation = client.get()
                 .uri("https://https://api.nationalize.io?name="+name)
                 .retrieve()
                 .bodyToMono(Nation.class);
         return nation;
-    }*/
+    }
 
 
     @Override
